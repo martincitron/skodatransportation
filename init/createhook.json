@@ -1,0 +1,13 @@
+{
+	"name": "web",
+	"active": true,
+	"events": [
+		"push",
+		"pull_request"
+	],
+	"config": {
+		"url": "https://api.ca-central-1.starter.openshift-online.com:6443/apis/build.openshift.io/v1/namespaces/csob/buildconfigs/prodfeat/webhooks/h3Owo4TEYv9loqgiiIaM/github",
+		"content_type": "json",
+		"insecure_ssl": "0"
+	}
+}
