@@ -1,0 +1,51 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "MQTTClient",
+    "version" : "1.0.0",
+    "description" : "MQTTClient"
+  },
+  "paths" : {
+    "/msg" : {
+      "get" : {
+        "operationId" : "getMsg",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/msg"
+            }
+          }
+        },
+        "produces" : [ "application/json" ],
+        "description" : "Retrieve msg"
+      },
+      "put" : {
+        "operationId" : "putMsg",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful."
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Update msg",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/msg"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/mqttclient/v1",
+  "definitions" : {
+    "msg" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+mosquitto_sub.exe -h 192.168.205.3 -p 1883 -t testtopic -c -i testsub1 -v -q 2

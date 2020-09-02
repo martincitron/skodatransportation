@@ -1,0 +1,1 @@
+mosquitto_pub.exe -h 192.168.205.3 -p 1884 -t "testtopic" -q 2 -m {"text":"ahoj"}
